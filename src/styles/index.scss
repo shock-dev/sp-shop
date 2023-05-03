@@ -1,3 +1,12 @@
 @import "fonts";
 @import "vars";
 @import "global";
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+}

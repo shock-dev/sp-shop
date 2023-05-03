@@ -1,0 +1,31 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 26px 30px;
+  border-bottom: 1px solid #CFCFCF;
+}
+
+.icon {
+  width: 24px;
+  height: 21px;
+  fill: #000;
+}
+
+.btn {
+  position: relative;
+}
+
+.count {
+  position: absolute;
+  right: -6px;
+  top: -6px;
+  min-width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  padding: 1px 3px;
+  background: #3366FF;
+  color: #fff;
+  font-size: 10px;
+  line-height: 12px;
+}
