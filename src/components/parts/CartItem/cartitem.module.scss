@@ -1,0 +1,45 @@
+.wrapper {
+  display: flex;
+}
+
+.pic {
+  padding: 25px 5px;
+
+  img {
+    max-width: 90px;
+    max-height: 51px;
+  }
+}
+
+.panel {
+  width: 100%;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  max-width: 170px;
+  margin-bottom: 15px;
+}
+
+.icon {
+  width: 18px;
+  height: 18px;
+}
+
+.actions {
+  display: flex;
+  gap: 0 16px;
+
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.price {
+  padding-left: 8px;
+}

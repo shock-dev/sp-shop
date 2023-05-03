@@ -1,0 +1,14 @@
+.wrapper {
+  padding: 40px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  margin-bottom: 30px;
+}
+
+.list > *:not(:last-child) {
+  margin-bottom: 40px;
+}
