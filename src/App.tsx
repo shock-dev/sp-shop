@@ -1,11 +1,10 @@
-import { Header } from './components/Header';
+import { Main } from './components/layouts/Main';
+import { Catalog } from './components/views/Catalog';
 
-function App() {
+export const App = () => {
   return (
-    <div className="App">
-      <Header />
-    </div>
+    <Main>
+      <Catalog />
+    </Main>
   );
-}
-
-export default App;
+};
