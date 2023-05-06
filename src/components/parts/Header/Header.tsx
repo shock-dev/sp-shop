@@ -1,6 +1,7 @@
 import { observer } from 'mobx-react-lite';
 import styles from './header.module.scss';
 import { cartStore } from '../../../stores/cart';
+import { Link } from 'react-router-dom';
 
 interface HeaderProps {
   toggleSidebar: () => void;
@@ -10,9 +11,9 @@ export const Header = observer(({ toggleSidebar }: HeaderProps) => {
   const amount = cartStore.items.length;
   return (
     <header className={styles.header}>
-      <a href="/">
+      <Link to="/">
         <img src="/img/logo.png" alt="Logo" />
-      </a>
+      </Link>
       <button className={styles.btn} onClick={toggleSidebar}>
         <svg className={styles.icon}>
           <use href="/img/sprite.svg#cart" />

@@ -3,4 +3,17 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 50px 70px;
   grid-auto-rows: max(300px);
+  padding: 60px 0;
+}
+
+@media (max-width: 1380px) {
+  .wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 660px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
 }

@@ -3,8 +3,10 @@ import { CartItem } from '../CartItem';
 import { observer } from 'mobx-react-lite';
 import { cartStore } from '../../../stores/cart';
 import { arrayUniqueByKey } from '../../../helpers/common';
-import { countById } from '../../../helpers/cart';
 import { Sneaker } from '../../../resources/sneakers';
+
+const countById = (items: Sneaker[], id: Sneaker['id']) =>
+  items.reduce((a, c) => (c.id === id ? ++a : a), 0);
 
 export const Cart = observer(() => {
   const { items } = cartStore;

@@ -13,6 +13,7 @@ export const Catalog = () => {
       {mock.map(i => (
         <Card
           key={i.id}
+          id={i.id}
           title={i.title}
           url={i.url}
           price={i.price}

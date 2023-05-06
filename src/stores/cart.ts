@@ -1,8 +1,10 @@
 import { makeAutoObservable } from 'mobx';
-import { Sneaker } from '../resources/sneakers';
+import { mock, Sneaker } from '../resources/sneakers';
 
 class CartStore {
-  items: Sneaker[] = [];
+  items: Sneaker[] = [...mock.slice(0, 2)];
+  tax = 100;
+  shopping = 150;
 
   constructor() {
     makeAutoObservable(this);
@@ -20,6 +22,15 @@ class CartStore {
 
   delete(id: Sneaker['id']) {
     this.items = this.items.filter(i => i.id !== id);
+  }
+
+  get subtotal() {
+    return this.items.reduce((a, c) => a + c.price, 0);
+  }
+
+  get total() {
+    if (this.subtotal === 0) return 0;
+    return this.subtotal + this.tax + this.shopping;
   }
 }
 
