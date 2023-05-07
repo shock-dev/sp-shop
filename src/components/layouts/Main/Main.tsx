@@ -8,7 +8,7 @@ interface MainProps {
 }
 
 export const Main = ({ children }: MainProps) => {
-  const [isSidebarOpen, setIsSidebarOpen] = useState(true);
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   useEffect(() => {
     if (isSidebarOpen) {
